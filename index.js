@@ -121,7 +121,8 @@ submitBtn.addEventListener("click", (e) => {
     fetch(emailUrl, {
         method: "POST",
         headers: {
-          "content-type":"application/json"
+            "content-type": "application/json",
+            
         },
         body: JSON.stringify(formData)
     }).then(res => res.json())
